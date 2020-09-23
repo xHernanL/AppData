@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.DatePicker;
 import android.widget.TextView;
 
+
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
+
+
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
             mDisplayDate = (TextView) findViewById(R.id.tvDate);
@@ -54,13 +57,14 @@ public class MainActivity extends AppCompatActivity {
                     mDisplayDate.setText(date);
                 }
             };
+
         }
 
-        public void onClick(View View){
+        public void onClick(View view){
             Intent myIntent=new Intent(MainActivity.this,DataActivity.class);
-
             startActivity(myIntent);
         }
+
 
     }
 
