@@ -7,72 +7,70 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
+<!-- EditText Nombre con Material Design -->
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+<EditText
+    android:id="@+id/etName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/name"/>
+</com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/etName"
-        android:hint="@string/name"
-        />
-    </com.google.android.material.textfield.TextInputLayout>
+<!-- TextView Fecha -->
+<TextView
+    android:id="@+id/tvDate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/date"
+    android:layout_marginTop="20dp" />
 
-    <TextView
-        android:id="@+id/tvDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/date"
-        android:layout_marginTop="20dp" />
+<!-- EditText Teléfono con Material Design -->
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+<EditText
+    android:id="@+id/etPhone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/phone"/>
+</com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
+<!-- EditText E-mail con Material Design -->
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+<EditText
+    android:id="@+id/etEmail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/email"/>
+</com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/etPhone"
-            android:hint="@string/phone"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
+<!-- EditText Descripción con Material Design -->
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+<EditText
+    android:id="@+id/etDescription"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/description"/>
+</com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/etEmail"
-            android:hint="@string/email"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/etDescription"
-            android:hint="@string/description"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <Button
-        android:id="@+id/btn_next"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginTop="20dp"
-        android:onClick="onClick"
-        android:text="@string/texto_boton_siguiente" />
+<!-- Btn - Siguiente Activity -->
+<Button
+    android:id="@+id/btn_next"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:layout_marginTop="20dp"
+    android:onClick="onClick"
+    android:text="@string/texto_boton_siguiente" />
 </LinearLayout>
