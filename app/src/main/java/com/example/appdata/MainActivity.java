@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     EditText etName;
     EditText etPhone;
     TextView tvDate;
+    EditText etEmail;
+    EditText etDescription;
 
 
     private static final String TAG = "MainActivity";
@@ -34,18 +36,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnSig = (Button)findViewById(R.id.btn_next);
-        etName = (EditText)findViewById(R.id.etName);
-        etPhone = (EditText)findViewById(R.id.etPhone);
-        tvDate = (TextView)findViewById(R.id.tvDate);
 
+        etName = (EditText)findViewById(R.id.etName);
+        tvDate = (TextView)findViewById(R.id.tvDate);
+        etPhone = (EditText)findViewById(R.id.etPhone);
+        etEmail = (EditText)findViewById(R.id.etEmail);
+        etDescription = (EditText)findViewById(R.id.etDescription);
 
         btnSig.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, DataActivity.class);
-                intent.putExtra("Info", etName.getText().toString());
-                intent.putExtra("phone",etPhone.getText().toString());
-                intent.putExtra("datef",tvDate.getText().toString());
+                intent.putExtra("InfoNombre", etName.getText().toString());
+                intent.putExtra("InfoFecha",tvDate.getText().toString());
+                intent.putExtra("InfoTelefono",etPhone.getText().toString());
+                intent.putExtra("InfoEmail",etEmail.getText().toString());
+                intent.putExtra("InfoDescripcion",etDescription.getText().toString());
                 startActivity(intent);
             }
         });
@@ -80,12 +86,6 @@ public class MainActivity extends AppCompatActivity {
                 mDisplayDate.setText(date);
             }
         };
-    }
-
-    public void onClick(View View){
-        Intent myIntent=new Intent(MainActivity.this,DataActivity.class);
-
-        startActivity(myIntent);
     }
 
 }
